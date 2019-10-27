@@ -34,12 +34,11 @@ public class CheckLiteTest {
 	}
 	
 	@Test
-	public void testR3F4() {
+	public void testR4() {
 		CheckliteSolution test = new CheckliteSolution();
-		Integer expected = 500;
+		Integer expected = 680;
 		Integer actual = test.checklite("KFEBEQEKUBRQBBBRFFRUUU");
 		assertEquals(expected, actual);
 		System.out.println(actual);
 	}
 }
-
