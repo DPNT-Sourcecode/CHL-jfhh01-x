@@ -15,6 +15,26 @@ public class CheckliteSolution {
     	itemMap.put("D", 0);
     	itemMap.put("E", 0);
     	itemMap.put("F", 0);
+    	itemMap.put("G", 0);
+    	itemMap.put("H", 0);
+    	itemMap.put("I", 0);
+    	itemMap.put("J", 0);
+    	itemMap.put("K", 0);
+    	itemMap.put("L", 0);
+    	itemMap.put("M", 0);
+    	itemMap.put("N", 0);
+    	itemMap.put("O", 0);
+    	itemMap.put("P", 0);
+    	itemMap.put("Q", 0);
+    	itemMap.put("R", 0);
+    	itemMap.put("S", 0);
+    	itemMap.put("T", 0);
+    	itemMap.put("U", 0);
+    	itemMap.put("V", 0);
+    	itemMap.put("W", 0);
+    	itemMap.put("X", 0);
+    	itemMap.put("Y", 0);
+    	itemMap.put("Z", 0);
     	
     	for(char item:skus.toCharArray()) {
     		switch(item){
@@ -100,6 +120,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
