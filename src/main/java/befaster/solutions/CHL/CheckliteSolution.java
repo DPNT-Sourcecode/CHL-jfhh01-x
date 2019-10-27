@@ -1,7 +1,6 @@
 package befaster.solutions.CHL;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import befaster.runner.SolutionNotImplementedException;
@@ -9,13 +8,12 @@ import befaster.runner.SolutionNotImplementedException;
 public class CheckliteSolution {
     public Integer checklite(String skus) {
 
-    	Map<String,Integer> itemMap = new LinkedHashMap()<String, Integer>();
-
-    	itemMap.put("E", 0);
+    	Map<String,Integer> itemMap = new HashMap<String, Integer>();
     	itemMap.put("A", 0);
     	itemMap.put("B", 0);
     	itemMap.put("C", 0);
     	itemMap.put("D", 0);
+    	itemMap.put("E", 0);
     	
     	for(char item:skus.toCharArray()) {
     		switch(item){
@@ -29,11 +27,14 @@ public class CheckliteSolution {
     	}
     	int totalCheckout = 0;
     	
-    	for(String key:itemMap.keySet()) {
-    		//totalCheckout+=calculatePriceOfItemR1(key,itemMap.get(key));
-    		
-    		totalCheckout+=calculatePriceOfItemR2(key,itemMap.get(key));
-    	}
+    	// Apply special offers and calculate price for round 1
+//    	for(String key:itemMap.keySet()) {
+//    		totalCheckout+=calculatePriceOfItemR1(key,itemMap.get(key));
+//    	}
+    	
+    	// Apply special offers and calculate price for round 2
+    	totalCheckout+=handleSpecialOffers(itemMap);
+    	
     	return totalCheckout;
     }
     
@@ -47,6 +48,10 @@ public class CheckliteSolution {
     	}
     }
     
+    public int handleSpecialOffers(HashMap<String,Integer> itemMap) {
+    	return 
+    }
+    
     // Method to calculate price of items in basket by applying special offers in round 1
     public int calculatePriceOfItemR2(String item, int amount) {
     	switch(item) {
@@ -58,6 +63,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
