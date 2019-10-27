@@ -8,8 +8,8 @@ public class CheckliteSolutionTest {
 
 	@Test
 	public void testChecklite() {
-		CheckliteSolution testBasket = new CheckliteSolution();
-		fail("Not yet implemented");
+		CheckliteSolution forTest;
+		assertEquals(forTest.checklite("EBEAEB"),160);
 	}
 
 	@Test
@@ -18,3 +18,4 @@ public class CheckliteSolutionTest {
 	}
 
 }
+
