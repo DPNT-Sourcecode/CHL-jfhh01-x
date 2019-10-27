@@ -107,6 +107,10 @@ public class CheckliteSolution {
     	Fs-=Fs/3;
     	totalCheckout+=calculatePriceOfItem("F",Fs);
     	
+    	int Ns = itemMap.get("N");
+    	totalCheckout+=calculatePriceOfItemR2("E",Es);
+    	int Bs = itemMap.get("B");
+    	
     	totalCheckout+=calculatePriceOfItem("A",itemMap.get("A"));
     	totalCheckout+=calculatePriceOfItem("C",itemMap.get("C"));
     	totalCheckout+=calculatePriceOfItem("D",itemMap.get("D"));
@@ -137,10 +141,10 @@ public class CheckliteSolution {
 	    	case "E": return amount*40;
 	    	case "F": return amount*10;
 	    	case "G": return amount*20;
-	    	case "H": return amount*10;
+	    	case "H": return (amount/10)*80 + ((amount%10)/5)*45;
 	    	case "I": return amount*35;
 	    	case "J": return amount*60;
-	    	case "K": return amount*80;
+	    	case "K": return (amount/2)*150 + (amount%2)*80;
 	    	case "L": return amount*90;
 	    	case "M": return amount*15;
 	    	case "N": return amount*40;
@@ -160,4 +164,5 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
