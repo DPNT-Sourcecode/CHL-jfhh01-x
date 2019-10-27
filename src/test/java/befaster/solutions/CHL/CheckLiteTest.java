@@ -9,6 +9,8 @@ public class CheckLiteTest {
 	@Test
 	public void test() {
 		CheckliteSolution test = new CheckliteSolution();
-		assertEquals(20, test.checklite("AACD"));
+		Integer expected = 20;
+		assertEquals(expected, test.checklite("AACD"));
 	}
 }
+
