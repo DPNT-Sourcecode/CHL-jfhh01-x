@@ -129,24 +129,39 @@ public class CheckliteSolution {
     	totalCheckout+=calculatePriceOfItem("C",itemMap.get("C"));
     	totalCheckout+=calculatePriceOfItem("D",itemMap.get("D"));
     	totalCheckout+=calculatePriceOfItem("E",itemMap.get("E"));
-    	
+    	totalCheckout+=calculatePriceOfItem("G",itemMap.get("G"));
+    	totalCheckout+=calculatePriceOfItem("H",itemMap.get("H"));
+    	totalCheckout+=calculatePriceOfItem("I",itemMap.get("I"));
+    	totalCheckout+=calculatePriceOfItem("J",itemMap.get("J"));
+    	totalCheckout+=calculatePriceOfItem("K",itemMap.get("K"));
+    	totalCheckout+=calculatePriceOfItem("L",itemMap.get("L"));
     	totalCheckout+=calculatePriceOfItem("N",itemMap.get("N"));
+    	totalCheckout+=calculatePriceOfItem("O",itemMap.get("O"));
+    	totalCheckout+=calculatePriceOfItem("P",itemMap.get("P"));
+    	totalCheckout+=calculatePriceOfItem("R",itemMap.get("R"));
+    	totalCheckout+=calculatePriceOfItem("S",itemMap.get("S"));
+    	totalCheckout+=calculatePriceOfItem("T",itemMap.get("T"));
+    	totalCheckout+=calculatePriceOfItem("V",itemMap.get("V"));
+    	totalCheckout+=calculatePriceOfItem("W",itemMap.get("W"));
+    	totalCheckout+=calculatePriceOfItem("X",itemMap.get("X"));
+    	totalCheckout+=calculatePriceOfItem("Y",itemMap.get("Y"));
+    	totalCheckout+=calculatePriceOfItem("Z",itemMap.get("Z"));
     	
     	return totalCheckout;
     }
     
     // Method to calculate price of items in basket by applying special offers in round 1
-    public int calculatePriceOfItemR2(String item, int amount) {
+    public int calculatePriceOfItemR1_R2(String item, int amount) {
     	switch(item) {
 	    	case "A": return (amount/5)*200 + ((amount%5)/3)*130 + ((amount%5)%3)*50;
 	    	case "B": return (amount/2)*45 + (amount%2)*30;
 	    	case "C": return amount*20;
 	    	case "D": return amount*15;
-	    	default: return amount*40;
+	    	case "E": return amount*40;
+	    	default: return 0;
     	}
     }
     
-
     
     // Method to calculate price of items in basket by applying special offers in round 1
     public int calculatePriceOfItem(String item, int amount) {
@@ -181,6 +196,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
