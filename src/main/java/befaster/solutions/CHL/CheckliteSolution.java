@@ -10,11 +10,12 @@ public class CheckliteSolution {
     public Integer checklite(String skus) {
 
     	Map<String,Integer> itemMap = new LinkedHashMap()<String, Integer>();
+
+    	itemMap.put("E", 0);
     	itemMap.put("A", 0);
     	itemMap.put("B", 0);
     	itemMap.put("C", 0);
     	itemMap.put("D", 0);
-    	itemMap.put("E", 0);
     	
     	for(char item:skus.toCharArray()) {
     		switch(item){
@@ -57,6 +58,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
