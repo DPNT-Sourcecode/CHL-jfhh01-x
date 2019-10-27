@@ -16,10 +16,10 @@ public class CheckliteSolution {
     	
     	for(char item:skus.toCharArray()) {
     		switch(item){
-	    		case 'A':  break;
-	    		case 'B': itemCount[1]++; break;
-	    		case 'C': itemCount[2]++; break;
-	    		case 'D': itemCount[3]++; break;    		
+    			case 'A': itemMap.put("A",itemMap.get("A") break;
+	    		case 'B': itemMap.put("B",itemMap.get("B") break;
+	    		case 'C': itemMap.put("C",itemMap.get("C") break;
+	    		case 'D': itemMap.put("D",itemMap.get("D") break;   		
 	    		default: return -1;
     		}
     	}
@@ -27,6 +27,7 @@ public class CheckliteSolution {
     
     public 
 }
+
 
 
 
