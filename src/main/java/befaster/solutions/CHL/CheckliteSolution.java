@@ -32,7 +32,7 @@ public class CheckliteSolution {
     }
     
     // Method to calculate price of items in basket by applying special offers
-    public int calculatePriceOfItem(String item, int amount) {
+    public int calculatePriceOfItemR1(String item, int amount) {
     	switch(item) {
 	    	case "A": return (amount/3)*130 + (amount%3)*50;
 	    	case "B": return (amount/2)*45 + (amount%2)*30;
@@ -41,3 +41,4 @@ public class CheckliteSolution {
     	}
     }
 }
+
