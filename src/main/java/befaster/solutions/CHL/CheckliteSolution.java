@@ -23,10 +23,16 @@ public class CheckliteSolution {
 	    		default: return -1;
     		}
     	}
+    	
+    	int totalCheckout = 0;
+    	itemMap.forEach(k,v) -> totalCheckout+=calculatePriceOfItem(k,v));
     }
     
-    public 
+    public calculatePriceOfItem(String item, Integer amount) {
+    	
+    }
 }
+
 
 
 
