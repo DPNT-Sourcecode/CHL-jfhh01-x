@@ -9,7 +9,9 @@ public class CheckliteSolutionTest {
 	@Test
 	public void testChecklite() {
 		CheckliteSolution forTest;
-		assertEquals(forTest.checklite("EBEAEB"),160);
+
+		Integer actual = forTest.checklite("EBEAEB");
+		assertEquals(160,actual);
 	}
 
 	@Test
@@ -18,4 +20,5 @@ public class CheckliteSolutionTest {
 	}
 
 }
+
 
