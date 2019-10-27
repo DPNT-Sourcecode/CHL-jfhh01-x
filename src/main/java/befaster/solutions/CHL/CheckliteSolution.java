@@ -63,7 +63,10 @@ public class CheckliteSolution {
     	totalCheckout+=calculatePriceOfItemR3("C",itemMap.get("C"));
     	totalCheckout+=calculatePriceOfItemR3("D",itemMap.get("D"));
     	
-    	int Fs = itemMap.get("F")-itemMap.get("F")/2;
+    	int Fs = itemMap.get("F");
+    	
+    	if(Fs>2)
+    		Fs-=(Fs-1)/2;
     	totalCheckout+=calculatePriceOfItemR3("F",itemMap.get("F"));
     	
     	return totalCheckout;
@@ -94,3 +97,4 @@ public class CheckliteSolution {
     	}
     }
 }
+
