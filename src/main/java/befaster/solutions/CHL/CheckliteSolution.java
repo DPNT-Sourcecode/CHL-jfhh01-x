@@ -25,7 +25,7 @@ public class CheckliteSolution {
 	    		default: return -1;
     		}
     	}
-    	int totalCheckout = 0;
+    	Integer totalCheckout = 0;
     	
     	// Apply special offers and calculate price for round 1
 //    	for(String key:itemMap.keySet()) {
@@ -77,4 +77,5 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
