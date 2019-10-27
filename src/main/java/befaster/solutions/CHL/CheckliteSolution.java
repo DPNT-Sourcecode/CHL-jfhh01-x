@@ -16,15 +16,19 @@ public class CheckliteSolution {
     	
     	for(char item:skus.toCharArray()) {
     		switch(item){
-    			case 'A': itemMap.put("A",itemMap.get("A")); break;
-	    		case 'B': itemMap.put("B",itemMap.get("B")); break;
-	    		case 'C': itemMap.put("C",itemMap.get("C")); break;
-	    		case 'D': itemMap.put("D",itemMap.get("D")); break;   		
+    			case 'A': itemMap.put("A",itemMap.get("A")+1); break;
+	    		case 'B': itemMap.put("B",itemMap.get("B")+1); break;
+	    		case 'C': itemMap.put("C",itemMap.get("C")+1); break;
+	    		case 'D': itemMap.put("D",itemMap.get("D")+1); break;   		
 	    		default: return -1;
     		}
     	}
     	int totalCheckout = 0;
-    	itemMap.forEach((k,v) -> totalCheckout+=calculatePriceOfItem(k,v));
+    	
+    	for(String key:itemMap.keySet()) {
+    		totalCheckout+=calculatePriceOfItem(key,itemMap.get(key));
+    	}
+    	return totalCheckout;
     }
     
     // Method to calculate price of items in basket by applying special offers
@@ -37,6 +41,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
