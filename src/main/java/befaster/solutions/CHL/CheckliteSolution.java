@@ -49,20 +49,23 @@ public class CheckliteSolution {
     }
     
     public int handleSpecialOffers(HashMap<String,Integer> itemMap) {
-    	
+    	int totalCheckout = 0;
+    	int Es = itemMap.get("E");
+    	int Bs = itemMap.get("B");
     }
     
     // Method to calculate price of items in basket by applying special offers in round 1
     public int calculatePriceOfItemR2(String item, int amount) {
     	switch(item) {
-	    	case "A": return (amount/5)*200 + (amount%5)/3*130 + (amount%3)*50;
+	    	case "A": return (amount/5)*200 + ((amount%5)/3)*130 + ((amount%5)%3)*50;
 	    	case "B": return (amount/2)*45 + (amount%2)*30;
 	    	case "C": return amount*20;
 	    	case "D": return amount*15;
-	    	default: return amount*15;
+	    	default: return amount*40;
     	}
     }
 }
+
 
 
 
