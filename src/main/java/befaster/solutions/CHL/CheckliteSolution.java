@@ -158,7 +158,7 @@ public class CheckliteSolution {
 	    	case "E": return amount*40;
 	    	case "F": return amount*10;
 	    	case "G": return amount*20;
-	    	case "H": return (amount/10)*80 + ((amount%10)/5)*45;
+	    	case "H": return (amount/10)*80 + ((amount%10)/5)*45 + ((amount%10)%5)*10;
 	    	case "I": return amount*35;
 	    	case "J": return amount*60;
 	    	case "K": return (amount/2)*150 + (amount%2)*80;
@@ -172,7 +172,7 @@ public class CheckliteSolution {
 	    	case "S": return amount*30;
 	    	case "T": return amount*20;
 	    	case "U": return amount*40;
-	    	case "V": return amount*50;
+	    	case "V": return (amount/3)*130 + ((amount%3)/2)*90 + ((amount%3)%2)*50;
 	    	case "W": return amount*20;
 	    	case "X": return amount*90;
 	    	case "Y": return amount*10;
@@ -181,6 +181,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
