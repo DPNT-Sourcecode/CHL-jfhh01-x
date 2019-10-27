@@ -51,7 +51,10 @@ public class CheckliteSolution {
     public int handleSpecialOffers(HashMap<String,Integer> itemMap) {
     	int totalCheckout = 0;
     	int Es = itemMap.get("E");
+    	totalCheckout+=calculatePriceOfItemR1("E",Es);
     	int Bs = itemMap.get("B");
+    	if(Bs>0)
+    		Bs-=Es/2;
     }
     
     // Method to calculate price of items in basket by applying special offers in round 1
@@ -65,11 +68,3 @@ public class CheckliteSolution {
     	}
     }
 }
-
-
-
-
-
-
-
-
