@@ -49,13 +49,15 @@ public class CheckliteSolution {
     }
     
     public int handleSpecialOffers(HashMap<String,Integer> itemMap) {
-    	return 
+    	
     }
     
     // Method to calculate price of items in basket by applying special offers in round 1
     public int calculatePriceOfItemR2(String item, int amount) {
     	switch(item) {
-	    	case "A": return (amount/3)*130 + (amount%3)*50;
+	    	case "A": int amount5 = amount/5;
+	    	
+	    	+ (amount/3)*130 + (amount%3)*50;
 	    	case "B": return (amount/2)*45 + (amount%2)*30;
 	    	case "C": return amount*20;
 	    	case "D": return amount*15;
@@ -63,6 +65,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
