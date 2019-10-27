@@ -23,17 +23,21 @@ public class CheckliteSolution {
 	    		default: return -1;
     		}
     	}
-    	
     	int totalCheckout = 0;
     	itemMap.forEach((k,v) -> totalCheckout+=calculatePriceOfItem(k,v));
     }
     
-    public calculatePriceOfItem(String item, Integer amount) {
-    	switch(A) {
-    	case "A": return (amount/3)*130 + (amount%3)*50;
+    // Method to calculate price of items in basket by applying special offers
+    public int calculatePriceOfItem(String item, int amount) {
+    	switch(item) {
+	    	case "A": return (amount/3)*130 + (amount%3)*50;
+	    	case "B": return (amount/2)*45 + (amount%2)*30;
+	    	case "C": return amount*20;
+	    	default: return amount*15;
     	}
     }
 }
+
 
 
 
