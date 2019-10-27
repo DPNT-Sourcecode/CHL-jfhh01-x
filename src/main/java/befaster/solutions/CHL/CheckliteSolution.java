@@ -1,6 +1,7 @@
 package befaster.solutions.CHL;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import befaster.runner.SolutionNotImplementedException;
@@ -8,7 +9,7 @@ import befaster.runner.SolutionNotImplementedException;
 public class CheckliteSolution {
     public Integer checklite(String skus) {
 
-    	Map<String,Integer> itemMap = new HashMap<String, Integer>();
+    	Map<String,Integer> itemMap = new LinkedHashMap()<String, Integer>();
     	itemMap.put("A", 0);
     	itemMap.put("B", 0);
     	itemMap.put("C", 0);
@@ -51,10 +52,11 @@ public class CheckliteSolution {
 	    	case "A": return (amount/3)*130 + (amount%3)*50;
 	    	case "B": return (amount/2)*45 + (amount%2)*30;
 	    	case "C": return amount*20;
-	    	case "D": return amount*20;
+	    	case "D": return amount*15;
 	    	default: return amount*15;
     	}
     }
 }
+
 
 
