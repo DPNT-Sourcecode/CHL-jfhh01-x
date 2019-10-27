@@ -12,10 +12,5 @@ public class CheckLiteTest {
 		Integer expected = 210;
 		Integer actual = test.checklite("EBEEBBBB");
 		assertEquals(expected, actual);
-		System.out.print(actual);
 	}
 }
-
-
-
-
