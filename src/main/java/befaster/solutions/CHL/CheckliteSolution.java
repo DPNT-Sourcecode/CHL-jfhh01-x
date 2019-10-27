@@ -16,10 +16,10 @@ public class CheckliteSolution {
     	
     	for(char item:skus.toCharArray()) {
     		switch(item){
-    			case 'A': itemMap.put("A",itemMap.get("A") break;
-	    		case 'B': itemMap.put("B",itemMap.get("B") break;
-	    		case 'C': itemMap.put("C",itemMap.get("C") break;
-	    		case 'D': itemMap.put("D",itemMap.get("D") break;   		
+    			case 'A': itemMap.put("A",itemMap.get("A")); break;
+	    		case 'B': itemMap.put("B",itemMap.get("B")); break;
+	    		case 'C': itemMap.put("C",itemMap.get("C")); break;
+	    		case 'D': itemMap.put("D",itemMap.get("D")); break;   		
 	    		default: return -1;
     		}
     	}
@@ -37,6 +37,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
