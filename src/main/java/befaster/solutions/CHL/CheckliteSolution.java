@@ -65,8 +65,8 @@ public class CheckliteSolution {
     	
     	int Fs = itemMap.get("F");
     	
-    	Fs=Fs-Fs/3;
-    	totalCheckout+=calculatePriceOfItemR3("F",itemMap.get("F"));
+    	Fs-=Fs/3;
+    	totalCheckout+=calculatePriceOfItemR3("F",Fs);
     	
     	return totalCheckout;
     }
@@ -96,5 +96,6 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
