@@ -1,6 +1,7 @@
 package befaster.solutions.CHL;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
@@ -8,7 +9,8 @@ public class CheckliteSolutionTest {
 
 	@Test
 	public void testChecklite() {
-		fail("Not yet implemented");
+		CheckliteSolution test = new CheckliteSolution();
+		assertEquals(20, test.checklite("AACD"));
 	}
 
 	@Test
@@ -17,3 +19,4 @@ public class CheckliteSolutionTest {
 	}
 
 }
+
