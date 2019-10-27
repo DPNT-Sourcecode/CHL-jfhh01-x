@@ -43,7 +43,27 @@ public class CheckliteSolution {
 	    		case 'C': itemMap.put("C",itemMap.get("C")+1); break;
 	    		case 'D': itemMap.put("D",itemMap.get("D")+1); break;  
 	    		case 'E': itemMap.put("E",itemMap.get("E")+1); break;  
-	    		case 'F': itemMap.put("F",itemMap.get("F")+1); break;  		
+	    		case 'F': itemMap.put("F",itemMap.get("F")+1); break;  	
+    			case 'G': itemMap.put("G",itemMap.get("G")+1); break;
+	    		case 'H': itemMap.put("H",itemMap.get("H")+1); break;
+	    		case 'I': itemMap.put("I",itemMap.get("I")+1); break;
+	    		case 'J': itemMap.put("J",itemMap.get("J")+1); break;  
+	    		case 'K': itemMap.put("K",itemMap.get("K")+1); break;  
+	    		case 'L': itemMap.put("L",itemMap.get("L")+1); break;  
+    			case 'M': itemMap.put("M",itemMap.get("M")+1); break;
+	    		case 'N': itemMap.put("N",itemMap.get("N")+1); break;
+	    		case 'O': itemMap.put("O",itemMap.get("O")+1); break;
+	    		case 'P': itemMap.put("P",itemMap.get("P")+1); break;  
+	    		case 'Q': itemMap.put("Q",itemMap.get("Q")+1); break;  
+	    		case 'R': itemMap.put("R",itemMap.get("R")+1); break;  
+	    		case 'S': itemMap.put("S",itemMap.get("S")+1); break;  
+    			case 'T': itemMap.put("T",itemMap.get("T")+1); break;
+	    		case 'U': itemMap.put("U",itemMap.get("U")+1); break;
+	    		case 'V': itemMap.put("V",itemMap.get("V")+1); break;
+	    		case 'W': itemMap.put("W",itemMap.get("W")+1); break;  
+	    		case 'X': itemMap.put("X",itemMap.get("X")+1); break;  
+	    		case 'Y': itemMap.put("Y",itemMap.get("Y")+1); break;  
+	    		case 'Z': itemMap.put("Z",itemMap.get("Z")+1); break;  		
 	    		default: return -1;
     		}
     	}
@@ -120,9 +140,3 @@ public class CheckliteSolution {
     	}
     }
 }
-
-
-
-
-
-

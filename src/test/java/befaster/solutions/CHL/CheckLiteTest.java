@@ -33,7 +33,3 @@ public class CheckLiteTest {
 		System.out.println(actual);
 	}
 }
-
-
-
-
