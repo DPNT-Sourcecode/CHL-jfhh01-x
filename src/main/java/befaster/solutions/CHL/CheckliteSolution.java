@@ -63,6 +63,9 @@ public class CheckliteSolution {
     	totalCheckout+=calculatePriceOfItemR2("C",itemMap.get("C"));
     	totalCheckout+=calculatePriceOfItemR2("D",itemMap.get("D"));
     	
+    	int Fs = itemMap.get("F");
+    	totalCheckout+=calculatePriceOfItemR2("F",itemMap.get("F"));
+    	
     	return totalCheckout;
     }
     
@@ -76,4 +79,19 @@ public class CheckliteSolution {
 	    	default: return amount*40;
     	}
     }
+    
+
+    
+    // Method to calculate price of items in basket by applying special offers in round 1
+    public int calculatePriceOfItemR3(String item, int amount) {
+    	switch(item) {
+	    	case "A": return (amount/5)*200 + ((amount%5)/3)*130 + ((amount%5)%3)*50;
+	    	case "B": return (amount/2)*45 + (amount%2)*30;
+	    	case "C": return amount*20;
+	    	case "D": return amount*15;
+	    	case "E": return amount*40;
+	    	default: return amount*10;
+    	}
+    }
 }
+
