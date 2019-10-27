@@ -136,7 +136,28 @@ public class CheckliteSolution {
 	    	case "D": return amount*15;
 	    	case "E": return amount*40;
 	    	case "F": return amount*10;
+	    	case "G": return amount*20;
+	    	case "H": return amount*10;
+	    	case "I": return amount*35;
+	    	case "J": return amount*60;
+	    	case "K": return amount*80;
+	    	case "L": return amount*90;
+	    	case "M": return amount*15;
+	    	case "N": return amount*40;
+	    	case "O": return amount*10;
+	    	case "P": return amount*50;
+	    	case "Q": return amount*30;
+	    	case "R": return amount*50;
+	    	case "S": return amount*30;
+	    	case "T": return amount*20;
+	    	case "U": return amount*40;
+	    	case "V": return amount*50;
+	    	case "W": return amount*20;
+	    	case "X": return amount*90;
+	    	case "Y": return amount*10;
+	    	case "Z": return amount*50;
 	    	default: return 0;
     	}
     }
 }
+
