@@ -6,13 +6,14 @@ import org.junit.Test;
 
 public class CheckLiteTest {
 
-	/*@Test
+	@Test
 	public void testR2() {
 		CheckliteSolution test = new CheckliteSolution();
 		Integer expected = 210;
 		Integer actual = test.checklite("EBEEBBBB");
 		assertEquals(expected, actual);
-	}*/
+		System.out.println(actual);
+	}
 	
 	@Test
 	public void testR3F2() {
@@ -20,6 +21,7 @@ public class CheckLiteTest {
 		Integer expected = 230;
 		Integer actual = test.checklite("EBEEBBBBFF");
 		assertEquals(expected, actual);
+		System.out.println(actual);
 	}
 	
 	@Test
@@ -28,6 +30,8 @@ public class CheckLiteTest {
 		Integer expected = 230;
 		Integer actual = test.checklite("FEBEEBBBBFF");
 		assertEquals(expected, actual);
+		System.out.println(actual);
 	}
 }
+
 

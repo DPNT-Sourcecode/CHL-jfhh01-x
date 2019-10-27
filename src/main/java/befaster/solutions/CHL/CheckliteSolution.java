@@ -21,7 +21,8 @@ public class CheckliteSolution {
 	    		case 'B': itemMap.put("B",itemMap.get("B")+1); break;
 	    		case 'C': itemMap.put("C",itemMap.get("C")+1); break;
 	    		case 'D': itemMap.put("D",itemMap.get("D")+1); break;  
-	    		case 'E': itemMap.put("E",itemMap.get("E")+1); break;  		
+	    		case 'E': itemMap.put("E",itemMap.get("E")+1); break;  
+	    		case 'F': itemMap.put("F",itemMap.get("E")+1); break;  		
 	    		default: return -1;
     		}
     	}
@@ -58,15 +59,15 @@ public class CheckliteSolution {
     	if(Bs>0)
     		Bs-=Es/2;
 
-    	totalCheckout+=calculatePriceOfItemR3("B",Bs);
-    	totalCheckout+=calculatePriceOfItemR3("A",itemMap.get("A"));
-    	totalCheckout+=calculatePriceOfItemR3("C",itemMap.get("C"));
-    	totalCheckout+=calculatePriceOfItemR3("D",itemMap.get("D"));
+    	totalCheckout+=calculatePriceOfItem("B",Bs);
+    	totalCheckout+=calculatePriceOfItem("A",itemMap.get("A"));
+    	totalCheckout+=calculatePriceOfItem("C",itemMap.get("C"));
+    	totalCheckout+=calculatePriceOfItem("D",itemMap.get("D"));
     	
     	int Fs = itemMap.get("F");
     	
     	Fs-=Fs/3;
-    	totalCheckout+=calculatePriceOfItemR3("F",Fs);
+    	totalCheckout+=calculatePriceOfItem("F",Fs);
     	
     	return totalCheckout;
     }
@@ -85,17 +86,19 @@ public class CheckliteSolution {
 
     
     // Method to calculate price of items in basket by applying special offers in round 1
-    public int calculatePriceOfItemR3(String item, int amount) {
+    public int calculatePriceOfItem(String item, int amount) {
     	switch(item) {
 	    	case "A": return (amount/5)*200 + ((amount%5)/3)*130 + ((amount%5)%3)*50;
 	    	case "B": return (amount/2)*45 + (amount%2)*30;
 	    	case "C": return amount*20;
 	    	case "D": return amount*15;
 	    	case "E": return amount*40;
-	    	default: return amount*10;
+	    	case "F": return amount*10;
+	    	default: return 0;
     	}
     }
 }
+
 
 
 
