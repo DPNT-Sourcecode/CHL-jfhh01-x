@@ -14,6 +14,7 @@ public class CheckliteSolution {
     	itemMap.put("C", 0);
     	itemMap.put("D", 0);
     	itemMap.put("E", 0);
+    	itemMap.put("F", 0);
     	
     	for(char item:skus.toCharArray()) {
     		switch(item){
@@ -22,7 +23,7 @@ public class CheckliteSolution {
 	    		case 'C': itemMap.put("C",itemMap.get("C")+1); break;
 	    		case 'D': itemMap.put("D",itemMap.get("D")+1); break;  
 	    		case 'E': itemMap.put("E",itemMap.get("E")+1); break;  
-	    		case 'F': itemMap.put("F",itemMap.get("E")+1); break;  		
+	    		case 'F': itemMap.put("F",itemMap.get("F")+1); break;  		
 	    		default: return -1;
     		}
     	}
@@ -60,14 +61,15 @@ public class CheckliteSolution {
     		Bs-=Es/2;
 
     	totalCheckout+=calculatePriceOfItem("B",Bs);
-    	totalCheckout+=calculatePriceOfItem("A",itemMap.get("A"));
-    	totalCheckout+=calculatePriceOfItem("C",itemMap.get("C"));
-    	totalCheckout+=calculatePriceOfItem("D",itemMap.get("D"));
     	
     	int Fs = itemMap.get("F");
     	
     	Fs-=Fs/3;
     	totalCheckout+=calculatePriceOfItem("F",Fs);
+    	
+    	totalCheckout+=calculatePriceOfItem("A",itemMap.get("A"));
+    	totalCheckout+=calculatePriceOfItem("C",itemMap.get("C"));
+    	totalCheckout+=calculatePriceOfItem("D",itemMap.get("D"));
     	
     	return totalCheckout;
     }
@@ -98,6 +100,7 @@ public class CheckliteSolution {
     	}
     }
 }
+
 
 
 
