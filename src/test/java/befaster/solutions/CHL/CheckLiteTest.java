@@ -9,12 +9,13 @@ public class CheckLiteTest {
 	@Test
 	public void test() {
 		CheckliteSolution test = new CheckliteSolution();
-		Integer expected = 155;
-		Integer actual = test.checklite("EBEBBB");
+		Integer expected = 210;
+		Integer actual = test.checklite("EBEEBBBB");
+		assertEquals(expected, actual);
 		System.out.print(actual);
-		assertEquals("Actual: "+actual.toString(),expected, actual);
 	}
 }
+
 
 
 

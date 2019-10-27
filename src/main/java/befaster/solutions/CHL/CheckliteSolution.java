@@ -52,16 +52,16 @@ public class CheckliteSolution {
     	int totalCheckout = 0;
     	
     	int Es = itemMap.get("E");
-    	totalCheckout+=calculatePriceOfItemR1("E",Es);
+    	totalCheckout+=calculatePriceOfItemR2("E",Es);
     	int Bs = itemMap.get("B");
     	
     	if(Bs>0)
     		Bs-=Es/2;
 
-    	totalCheckout+=calculatePriceOfItemR1("B",Bs);
-    	totalCheckout+=calculatePriceOfItemR1("A",itemMap.get("A"));
-    	totalCheckout+=calculatePriceOfItemR1("C",itemMap.get("C"));
-    	totalCheckout+=calculatePriceOfItemR1("D",itemMap.get("D"));
+    	totalCheckout+=calculatePriceOfItemR2("B",Bs);
+    	totalCheckout+=calculatePriceOfItemR2("A",itemMap.get("A"));
+    	totalCheckout+=calculatePriceOfItemR2("C",itemMap.get("C"));
+    	totalCheckout+=calculatePriceOfItemR2("D",itemMap.get("D"));
     	
     	return totalCheckout;
     }
@@ -77,3 +77,4 @@ public class CheckliteSolution {
     	}
     }
 }
+
