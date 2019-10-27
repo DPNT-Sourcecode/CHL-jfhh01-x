@@ -25,13 +25,16 @@ public class CheckliteSolution {
     	}
     	
     	int totalCheckout = 0;
-    	itemMap.forEach(k,v) -> totalCheckout+=calculatePriceOfItem(k,v));
+    	itemMap.forEach((k,v) -> totalCheckout+=calculatePriceOfItem(k,v));
     }
     
     public calculatePriceOfItem(String item, Integer amount) {
-    	
+    	switch(A) {
+    	case "A": return (amount/3)*130 + (amount%3)*50;
+    	}
     }
 }
+
 
 
 
