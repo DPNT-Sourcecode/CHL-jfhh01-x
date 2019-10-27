@@ -7,8 +7,15 @@ public class CheckliteSolution {
     	
     	int[] itemCount = new int[] {0,0,0,0};
     	for(char item:skus.toCharArray()) {
-    		case 'A': 
+    		switch(item){
+	    		case 'A': itemCount[0]++; break;
+	    		case 'B': itemCount[1]++; break;
+	    		case 'C': itemCount[2]++; break;
+	    		case 'D': itemCount[3]++; break;    		
+	    		default: return -1;
+    		}
     	}
     }
 }
+
 
